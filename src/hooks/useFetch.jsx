@@ -26,6 +26,7 @@ const useFetch = ({ keyword }) => {
 
 	useEffect(() => {
 		if (keyword) fetchImage()
+		//eslint-disable-next-line
 	}, [keyword]);
 
 	return heroImage;
