@@ -654,7 +654,7 @@ $cross-offset: (
 
 }
 
-@media only screen and (max-width: 391px) {
+@media only screen and (max-width: 700px) {
 	.eth_card {
 		width: 100%;
 	}
@@ -674,7 +674,7 @@ $cross-offset: (
 
 }
 
-@media only screen and (min-width: 392px) and (max-width: 769px) {
+@media only screen and (min-width: 612px) and (max-width: 845px) {
 	.eth_card {
 		width: 50%;
 	}
