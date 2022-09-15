@@ -22,6 +22,7 @@ const Transfer = () => {
 
 	useEffect(() => {
 		checkIfWalletIsConnected()
+		//eslint-disable-next-line
 	}, [])
 
 	const handleSubmit = (e) => {
