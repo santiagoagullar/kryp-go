@@ -1,0 +1,13 @@
+body {
+  background: linear-gradient(217deg, rgba(91, 99, 232, 255), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(151, 40, 198, 255), rgba(0, 0, 255, 0) 70.71%),
+    linear-gradient(336deg, rgba(30, 29, 38, 255), rgba(0, 255, 0, 0) 70.71%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@font-face {
+  font-family: Disket;
+  src: url('./fonts/Disket-Mono-Bold.ttf');
+}

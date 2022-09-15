@@ -1,0 +1,104 @@
+@import url("https://use.typekit.net/gae7iml.css");
+
+.services {
+	width: 70%;
+	height: 90vh;
+	margin: 10px auto;
+	display: flex;
+	align-items: center;
+	font-family: 'Roboto';
+}
+
+.services__description {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+
+	h1 {
+		margin-right: auto;
+		font-family: 'Roboto';
+		color: #fff;
+		font-weight: 900;
+		font-size: 60px;
+		margin-left: 20px;
+		max-width: 50%;
+
+		strong {
+			font-family: titillium-web,
+				sans-serif;
+			color: #000;
+		}
+
+	}
+}
+
+.services__list {
+	display: flex;
+	flex-direction: column;
+	max-width: 50%;
+
+	li {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		padding: 10px;
+		border: 1px solid black;
+		margin: 20px;
+		border-radius: 7px;
+
+		div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			padding: 5px;
+
+			svg {
+				color: #fff;
+			}
+
+		}
+
+		p {
+			display: inline-block;
+			padding-left: 10px;
+			max-width: 80%;
+		}
+	}
+
+	li:nth-child(odd) div {
+		background-color: #7e29b8;
+	}
+
+	li:nth-child(even) div {
+		background-color: #6163e6;
+	}
+}
+
+@media(max-width:845px) {
+	.services {
+		flex-wrap: wrap;
+		margin-top: auto;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	.services__description {
+		h1 {
+			margin-top: 20px;
+			font-weight: 900;
+			font-size: 40px;
+			max-width: 100%;
+		}
+	}
+
+	.services__list {
+		max-width: 100%;
+	}
+
+}

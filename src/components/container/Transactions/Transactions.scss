@@ -1,0 +1,77 @@
+@import url("https://use.typekit.net/gae7iml.css");
+
+.transactions {
+	width: 70%;
+	height: 90vh;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.transactions__header-connected {
+	display: flex;
+	align-items: center;
+	height: 15%;
+}
+
+.transactions__header {
+	display: flex;
+	align-items: center;
+	height: 80%;
+}
+
+h3 {
+	margin: auto;
+	font-family: titillium-web,
+		sans-serif;
+	font-size: 40px;
+}
+
+.transactions_container {
+	margin-top: 20px;
+	display: flex;
+	margin: auto;
+	max-width: 90%;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.transaction_card {
+	display: flex;
+	flex-direction: column;
+	max-width: 30%;
+	padding: 1%;
+	background: linear-gradient(to top, rgba(87, 36, 59, 255), rgba(151, 40, 198, 255));
+	margin: 1%;
+	border-radius: 7px;
+	font-family: titillium-web,
+		sans-serif;
+
+	img {
+		border-radius: 7px;
+	}
+
+	p {
+		padding: 1%;
+		word-wrap: break-word;
+	}
+
+}
+
+@media only screen and (max-width: 391px) {
+	.transaction_card {
+		margin-top: 20px;
+		max-width: 100%;
+	}
+}
+
+@media only screen and (min-width: 392px) and (max-width: 769px) {
+	.transaction_card {
+		margin-top: 20px;
+		max-width: 45%;
+	}
+
+	.transactions_container {
+		max-width: 100%;
+	}
+}

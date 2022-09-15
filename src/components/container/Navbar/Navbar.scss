@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@100&display=swap');
+@import url("https://use.typekit.net/gae7iml.css");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+li,
+.navbar_link {
+	font-family: titillium-web,
+		sans-serif;
+	font-size: 50px;
+	font-weight: 900;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.navbar {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	z-index: 9999;
+	box-shadow: 0 0 5px 0;
+	transition: box-shadow 0.3s ease-in-out, transform 0.2s;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	top: 0;
+	padding: 10px 10%;
+	backdrop-filter: blur(7px);
+	border-bottom: 1px solid white;
+}
+
+.logo {
+	cursor: pointer;
+	margin-right: auto;
+	width: 70px;
+	height: 80px;
+}
+
+.nav__links {
+	list-style: none;
+
+	li {
+		display: inline-block;
+		padding: 0 20px;
+	}
+
+	li .navbar_link {
+		color: #fff;
+		transition: all 0.3s ease;
+		text-transform: uppercase;
+
+		&:hover {
+			color: #7249d7;
+		}
+	}
+
+	.navbar_link {
+		cursor: pointer;
+	}
+}
+
+.top {
+	box-shadow: none;
+}
+
+.hidden {
+	transform: translateY(-200px);
+}
+
+.menu-icon {
+	display: none;
+}
+
+.app__navbar-menu {
+	display: none;
+}
+
+@media (max-width:700px) {
+	header {
+		display: none;
+	}
+
+	.navbar {
+		display: flex;
+		top: 0;
+		backdrop-filter: blur(7px);
+		border-bottom: 1px solid white;
+	}
+
+	.logo {
+		cursor: pointer;
+		margin-right: auto;
+		width: 70px;
+		height: 80px;
+	}
+
+	.app__navbar-menu {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		top: 0;
+		padding: 10px 10%;
+		backdrop-filter: blur(7px);
+		border-bottom: 1px solid white;
+
+		svg {
+			width: 70px;
+			height: 70px;
+		}
+
+		.nav__links-container {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			z-index: 5;
+			padding: 7px;
+			width: 80%;
+			height: 200vh;
+			background: linear-gradient(to bottom, rgba(91, 99, 232, 255), rgba(151, 40, 198, 255));
+			box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+
+			svg {
+				width: 35px;
+				height: 35px;
+				margin: 5px 10px;
+			}
+
+			ul {
+				list-style: none;
+				height: 30%;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-around;
+			}
+
+			li {
+				a {
+					text-decoration: none;
+					text-transform: uppercase;
+					font-weight: 500;
+					transition: all 0.3s ease-in-out;
+				}
+			}
+		}
+
+	}
+}
+
+.lock-scroll {
+	overflow: hidden;
+}
